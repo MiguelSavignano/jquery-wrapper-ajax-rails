@@ -15,7 +15,9 @@ Following the [rails routing conventions](http://guides.rubyonrails.org/routing.
 
 You can update a resource by ajax
 ```javascript
-$.railsUpdate({type:"service", description:"foo bazz", active:true}, (service_updated) => console.log(service_updated))
+$.railsUpdate({type:"service", id:5220 description:"foo bazz", active:true},
+              (service_updated) => console.log(service_updated)
+)
 ```
 This it's only a wrapper for the Jquery ajax call
 
